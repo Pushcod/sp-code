@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Content = (( getContent )) => {
   return (
@@ -8,4 +8,4 @@ const Content = (( getContent )) => {
   )
 }
 
-export default Content
+export default Content;
