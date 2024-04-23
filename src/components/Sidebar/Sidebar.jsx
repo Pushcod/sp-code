@@ -16,11 +16,13 @@ const Sidebar = () => {
         </Link>
       </div>
       <nav className="w-full sm:pt-24">
-        <menu className="w-full flex flex-col items-center justify-center gap-10">
+        <menu className="w-full flex flex-col items-center justify-center gap-5">
           {Menu.map((item, index) => {
             return (
               <li key={index} className="inline-flex">
-                <Link href={item.url} className={`${path === item.url ? 'text-blue-500' : 'text-black/50'} p-2 hover:text-black`}>{item.label}</Link>
+                <Link href={item.url} className={`${path === item.url ? 'bg-blue-500 text-white' : 'text-black/50'} p-2 hover:bg-blue-500 hover:text-white rounded-md `}>
+                  <item.icon/>
+                </Link>
               </li>
             );
           })}

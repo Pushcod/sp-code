@@ -1,10 +1,12 @@
+import { Home, SquareTerminal,AppWindowMac, Blocks, PenTool,Newspaper } from "lucide-react";
+
 const Menu = [
-    {label: 'Главная', url:'/'},
-    {label: 'Проекты', url:'/projects'},
-    {label: 'Софт', url:'/soft'},
-    {label: 'Плагины', url:'/plugins'},
-    {label: 'Макеты', url:'/design'},
-    {label: 'Статьи', url:'/articles'},
+    {label: 'Главная', url:'/' , icon:Home},
+    {label: 'Проекты', url:'/projects', icon: SquareTerminal},
+    {label: 'Софт', url:'/soft', icon:AppWindowMac},
+    {label: 'Плагины', url:'/plugins', icon:Blocks},
+    {label: 'Макеты', url:'/design', icon:PenTool},
+    {label: 'Статьи', url:'/articles', icon:Newspaper},
 
 ];
 
