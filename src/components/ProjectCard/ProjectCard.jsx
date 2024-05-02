@@ -1,8 +1,11 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-
+import Loader from '../Ui/Loader/Loader'
+import React, { useState } from 'react'
+import LoaderLink from '../Ui/LoaderLink/LoaderLink'
 const ProjectCard = ({ getData }) => {
+ 
   return (
     <div className='w-full grid grid-cols-3 gap-5'>
       {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => {
@@ -15,7 +18,7 @@ const ProjectCard = ({ getData }) => {
               <Image fill loading='lazy' src={'/assets/img/projects/nier.jpeg'} alt='Изображение проекта' className='w-full h-full object-cover object-top' />
             </div>
             <h3 className="text-lg font-medium mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, maiores?</h3>
-            <Link href={'/projects/' +  'web-project'} className='text-blue-500 hover:underline'>Смотреть подробнее</Link>
+            <LoaderLink href={'/projects/' + 'web-project'} />
           </article>
         );
       })}
