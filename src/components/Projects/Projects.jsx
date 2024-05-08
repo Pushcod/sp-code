@@ -12,7 +12,7 @@ const Projects = ({getData}) => {
                 <Heading text='Готовые проекты' className={'mb-5'}/>
                 <Link href={'/soft'} className='text-blue-500'>Показать всё</Link>
             </div>
-            <ProjectCards getData={''} />
+            <ProjectCards getData={getData} />
           </div>
         </section>
       )
