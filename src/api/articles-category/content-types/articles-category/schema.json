@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles_categories",
+  "info": {
+    "singularName": "articles-category",
+    "pluralName": "articles-categories",
+    "displayName": "Статьи: категории"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "isPopular": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
